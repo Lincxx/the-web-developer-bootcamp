@@ -1,0 +1,15 @@
+/*body {
+
+}*/
+
+li {
+    border: solid red 1px;
+}
+
+#special {
+    color: pink;
+}
+
+.completed {
+    text-decoration: line-through;
+}
