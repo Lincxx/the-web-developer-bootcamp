@@ -1,0 +1,14 @@
+body{
+    background: pink;
+    /*background-image: url("https://s-media-cache-ak0.pinimg.com/236x/ab/44/71/ab4471f53db52cbf3fb7e900d8374bca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+h4{
+    background: rgb(255, 95, 0);
+}
+
+h1{
+    border: purple 1px solid;
+}
