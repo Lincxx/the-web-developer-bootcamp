@@ -1,5 +1,5 @@
 var age = prompt("What is your current age");
-var days = 365;
+var days = 365.25;
 
 var daysBeenAlive = age * days;
 console.log(daysBeenAlive);
