@@ -27,18 +27,22 @@ console.log(isEven(333));
 
 
 function factorial(x) {
-    var fact = 0;
-    if (x === 0) {
+    var fact = 1;
+    if (x <= 0) {
+        console.log("if called");
         return 1;
     } else {
-        for (var i = 1; i > x; i++) {
-            if (x <= 0) {
-                return;
-            }
-            fact += x * (x-i)
-            console.log(i);
-            x--;
+        for (var i = 1; i <= x; i++) {
+            fact = fact * i;
         }
         return fact;
     }
 }
+
+function kabobToSnake(word) {
+    return word.replace(/-/g, '_');
+}
+
+kabobToSnake("hello-world");
+kabobToSnake("Go-to-the-worlds-end");
+kabobToSnake("qwerty-the-way-here");
