@@ -18,7 +18,7 @@ printReverse(numbers);
 
 function isUniform(arr) {
     var temp = arr[0];
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = 1; i < arr.length; i++) {
         if (temp == arr[i]) {
             continue;
         } else {
@@ -27,6 +27,17 @@ function isUniform(arr) {
     }
     return true;
 }
+
+//cleaner verison of isUnoform
+// function isUniform(arr) {
+//     var temp = arr[0];
+//     for (var i = 1; i < arr.length; i++) {
+//         if (temp !== arr[i]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
 
 console.log(isUniform([1,1,1,1]));//
 console.log(isUniform([2,1,1,1]));
