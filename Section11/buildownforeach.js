@@ -21,6 +21,7 @@ function func(x){
 
 myForEach([1,2,3,4], func);
 
+
 myForEach(['jer', 'jim'], function(person){
     console.log(person);
 });
