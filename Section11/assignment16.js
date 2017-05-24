@@ -47,10 +47,11 @@ console.log(isUniform(["b", "b", "b"]));
 function sumArray(arr) {
     var sum = 0;
     arr.forEach(function(ar){
-        sum+= ar;
+        sum += ar;
     })
     return sum;
 }
+
 
 console.log(sumArray([1,2,3]));
 console.log(sumArray([10,3,10, 4]));
@@ -74,6 +75,17 @@ function maxForEach(arr) {
             temp = ar;
         }
     });
+    return temp;
+}
+
+//another way
+function maxForEach(arr) {
+    var temp = arr[0];
+    for (var i = 1; i < arr.length; i++) {
+        if(arr[i] > temp){
+            temp = arr[i]
+        }
+    }
     return temp;
 }
 
