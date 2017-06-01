@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Selectors</title>
+</head>
+<body>
+    <h1>jQuery Selectors</h1>
+
+    <ul>
+        <li>Newt</li>
+        <li>Howler Monkey <a href="www.monkey.com">Monkey.com</a></li>
+        <li id="cute">Bush Baby</li>
+    </ul>
+
+    <ol id="first">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+    <a href="www.google.com">google</a>
+    <script src="lib/jquery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+        console.log($('h1'));
+        console.log($('a'));
+        console.log($('li a'));
+        console.log($('#cute'));
+
+        //.css for styling
+        $('h1').css('color', 'red');
+        //vanilla JS
+        //document.querySelector("h1").style.color = "yellow";
+
+        //pass an object with styles
+        var styles = {
+            backgroundColor: "pink",
+            fontWeight: "bold",
+            border: "solid 1px purple"
+        }
+        $('#cute').css(styles);
+
+        $('li').css("color", "blue");
+        //Vanilla js to change all the li
+        // var lis = document.querySelectorAll('li');
+        // for (var i = 0; i < lis.length; i++) {
+        //     lis[i].style.color = "green";
+        // }
+
+        $('#first > li').css({
+            fontSize: '23px',
+            backgroundColor: 'coral',
+            border: "1px dashed rgba(12,89,123, 0.5)"
+        });
+
+    </script>
+</body>
+</html>
