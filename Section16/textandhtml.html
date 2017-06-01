@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Text and HTML</h1>
+    <h3>Common jQuery Method</h3>
+
+    <ol>
+        <li>val()</li>
+        <li>text()</li>
+        <li>attr()</li>
+        <li>html()</li>
+        <li>add()</li>
+        <li>remove()</li>
+        <li>toggle()</li>
+    </ol>
+
+    <input type="text" placeholder="Your Name">
+    <ul>
+        <li>Skittle</li>
+        <li>Starbrust</li>
+        <li>Reese</li>
+    </ul>
+
+    <script src="lib/jquery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+        //text is html safe, it will rendering every thing.
+        //console.log($('h1').text());
+        //console.log($('ul li').text());
+
+
+        console.log($('ul').html());
+        $('ul').html("<li>Been Hacked</li>")
+    </script>
+</body>
+</html>
