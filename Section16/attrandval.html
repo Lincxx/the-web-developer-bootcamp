@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Attr and Val</h1>
+
+    <input type="text" placeholder="Your Name">
+    <ul>
+        <li>Skittle</li>
+        <li>Starbrust</li>
+        <li>Reese</li>
+    </ul>
+
+    <select class="" name="">
+        <option>Ostrich</option>
+        <option>Turtle</option>
+        <option>Fish</option>
+    </select>
+    <br>
+    <img src="https://s-media-cache-ak0.pinimg.com/564x/b5/4f/8f/b54f8fd6d64c55bd44c197236a4eaaa6.jpg" alt="">
+    <img src="https://s-media-cache-ak0.pinimg.com/564x/b5/4f/8f/b54f8fd6d64c55bd44c197236a4eaaa6.jpg" alt="">
+    <img src="https://s-media-cache-ak0.pinimg.com/564x/b5/4f/8f/b54f8fd6d64c55bd44c197236a4eaaa6.jpg" alt="">
+
+    <script src="lib/jquery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+        $('img').css('width', '200px');
+        $('img').attr('src', 'https://i.ytimg.com/vi/ZeBmOg5rJXM/maxresdefault.jpg');
+
+        //$('input').attr('type', 'color');
+        $('img').last().attr('src', 'https://i.ytimg.com/vi/9bp4MjQfPX0/maxresdefault.jpg')
+
+        //gat a value from an input
+
+        $('input').val();
+    </script>
+</body>
+</html>
