@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulating Classes</title>
+    <style>
+        .correct {
+            color: green;
+        }
+
+        .wrong{
+            color: red;
+            background-color: pink;
+        }
+
+        .done{
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulating Classes</h1>
+
+    <input type="text" placeholder="Your Name">
+    <ul>
+        <li>Skittle</li>
+        <li>Starbrust</li>
+        <li>Reese</li>
+    </ul>
+
+    <select class="" name="">
+        <option>Ostrich</option>
+        <option>Turtle</option>
+        <option>Fish</option>
+    </select>
+    <br>
+    <!-- <img src="https://s-media-cache-ak0.pinimg.com/564x/b5/4f/8f/b54f8fd6d64c55bd44c197236a4eaaa6.jpg" alt="">
+    <img src="https://s-media-cache-ak0.pinimg.com/564x/b5/4f/8f/b54f8fd6d64c55bd44c197236a4eaaa6.jpg" alt="">
+    <img src="https://s-media-cache-ak0.pinimg.com/564x/b5/4f/8f/b54f8fd6d64c55bd44c197236a4eaaa6.jpg" alt=""> -->
+
+    <script src="lib/jquery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+        $('h1').addClass('correct');
+        $('h1').removeClass('correct');
+
+        $('li').addClass('wrong');
+        $('li').removeClass('wrong');
+        $('li').addClass('correct');
+
+        $('li').toggleClass('correct');
+
+        $('li:first-of-type').toggleClass('done');
+        $('li').toggleClass('done');
+
+
+    </script>
+</body>
+</html>
