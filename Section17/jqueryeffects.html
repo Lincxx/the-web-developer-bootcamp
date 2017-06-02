@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Effects</title>
+    <style>
+        .active {
+            color: green;
+            background: rgba(96, 233, 147, 0.5);
+            width: 10%;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background: teal;
+            float:left;
+            margin-left: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Events</h1>
+
+    <button type="button" name="button">Click Me</button>
+    <br><br>
+    <div>Please don't fade me</div>
+    <div>I'm begging you, please!</div>
+    <div>help help help</div>
+
+    <script src="lib/jquery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+
+        // $('button').click(function () {
+        //     $('div').fadeOut(1000, function () {
+        //         $(this).remove();
+        //     });
+        //
+        // });
+
+        // $('button').click(function () {
+        //     $('div').fadeIn('slow', function () {
+        //
+        //     });
+        // });
+
+        // $('button').click(function () {
+        //     $('div').fadeToggle('slow', function () {
+        //
+        //     });
+        // });
+
+        // $('button').click(function () {
+        //     $('div').slideDown('slow', function () {
+        //
+        //     });
+        // });
+        //
+        // $('button').click(function () {
+        //     $('div').slideUp('slow', function () {
+        //
+        //     });
+        // });
+
+        $('button').click(function () {
+            $('div').slideToggle(1000, function () {
+                console.log('slide is done');
+                $(this).remove();
+            });
+        });
+
+
+
+    </script>
+</body>
+</html>
