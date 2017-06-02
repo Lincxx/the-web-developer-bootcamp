@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Events</title>
+    <title>Keypress</title>
     <style>
         .active {
             color: green;
@@ -14,9 +14,11 @@
 <body>
     <h1>jQuery Events</h1>
 
+    <input type="text">
+
     <ul>
-        <li class="active">click()</li>
-        <li>keypress()</li>
+        <li>click()</li>
+        <li class="active">keypress()</li>
         <li>on()</li>
     </ul>
 
@@ -26,13 +28,11 @@
 
     <script src="lib/jquery-2.2.4.min.js" charset="utf-8"></script>
     <script>
-        $('h1').click(function(){
-            alert('clicked');
-        });
-
-        $('li').click(function(){
-            $(this).css('backgroundColor', 'pink')
-        })
+    $('input').keypress(function(event){
+        if(event.which === 13){
+            console.log("You hit enter");
+        }
+    });
     </script>
 </body>
 </html>
