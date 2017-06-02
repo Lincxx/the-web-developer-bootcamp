@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keypress</title>
+    <style>
+        .active {
+            color: green;
+            background: rgba(96, 233, 147, 0.5);
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Events</h1>
+
+    <input type="text">
+
+    <ul>
+        <li>click()</li>
+        <li >keypress()</li>
+        <li class="active">on()</li>
+    </ul>
+
+    <button>Don't click</button>
+    <button>Sersiously Don't click me</button>
+    <button>This is your last warning!</button>
+
+    <script src="lib/jquery-2.2.4.min.js" charset="utf-8"></script>
+    <script>
+        $('h1').on('click', function(){
+            $(this).css('color', 'orange');
+        });
+
+        $('input').on('keypress', function() {
+            console.log('key pressed');
+        })
+
+        $('button').on('mouseenter', function() {
+            $(this).css('font-weight', 'bold');
+        })
+        $('button').on('mouseleave', function() {
+            $(this).css('font-weight', 'normal');
+        })
+    </script>
+</body>
+</html>
